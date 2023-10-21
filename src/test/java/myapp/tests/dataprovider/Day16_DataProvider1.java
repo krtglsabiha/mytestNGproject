@@ -31,26 +31,23 @@ public class Day16_DataProvider1 {
         return credentials;
     }
     //    TEST METHOD 2
-    @Test(dataProvider = "management_credentials")//calling the data provider methods with custom name
+    @Test(dataProvider = "management_credentials",groups = "minor_regression_group")//calling the data provider methods with custom name
     public void test2(String userName,String password,String title, String age){
         System.out.println("Username "+ userName+" | Password "+password+" | Title "+title+" | Age "+age);
     }
-
-    //NOTE: the data provider methods can be stored in an Util class
-    //Create a DataProviderUtils class and call the data from that class!!
-    //If the data is coming from different class we must use dataProviderClass = Class Name
-    //TEST METHOD 3
+    //    NOTE: the data providers methods can be stored in a UTIL CLASS
+//    Create a DataProviderUtils class and call the data from that class!!!
+//    If the data is coming from a different class, then we must use dataProviderClass = Class Name
+//    TEST METHOD 3
     @Test(dataProvider = "employeeCredentialsProvider",dataProviderClass = DataProviderUtils.class)
     public void employeeCredentialsTest(String email,String pass){
-        System.out.println("Email : " + email + " | Pass : " + pass);
+        System.out.println("Email : "+email+" | Pass : "+pass);
     }
-
-//   get the data from excel data provider that is in the DataProviderUtils
-    //DATA TRANSFER FLOW ===> excel > data provider method>test method
-    // TEST METHOD 4
-    @Test(dataProvider = "excelEmployeeData", dataProviderClass = DataProviderUtils.class)
-    public void excelEmployeeDataTest(String  email,String pass){
-        System.out.println("Email : " + email + " | Pass : " + pass);
+    //    Get the data from excel data provider that is in the DataProviderUtils
+//    DATA TRANSFER FLOW --->>> excel > data provider method > test method
+//    TEST  METHOD 3
+    @Test(dataProvider = "excelEmployeeData",dataProviderClass = DataProviderUtils.class)
+    public void excelEmployeeDataTest(String email, String pass){
+        System.out.println("Email : "+email+" | Pass : "+pass);
     }
-
 }

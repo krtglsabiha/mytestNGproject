@@ -1,10 +1,6 @@
 package myapp.utilities;
-
-
 import org.testng.annotations.DataProvider;
-
 public class DataProviderUtils {
-
     //    Data Provider Method to get the employee credentials
     @DataProvider
     public Object[][] employeeCredentialsProvider(){
@@ -16,13 +12,22 @@ public class DataProviderUtils {
         };
         return employeeInfo;
     }
- // Data Provider to get employee credentials from the Excel
+    //    Data Provider to get the employee credentials from the EXCEL SHEET
     @DataProvider
     public Object[][] excelEmployeeData(){
         String excelPath = "./resources/data_sheet.xlsx";
         String sheetName = "employee_credentials";
-        ExcelUtils excelUtils=new ExcelUtils(excelPath,sheetName);
-        Object [][] employeeInfo  = excelUtils.getDataArrayWithoutFirstRow();
+        ExcelUtils excelUtils = new ExcelUtils(excelPath,sheetName);
+        Object[][] employeeInfo = excelUtils.getDataArrayWithoutFirstRow();
+        return employeeInfo;
+    }
+    //    Data Provider to get the employee credentials from the EXCEL SHEET
+    @DataProvider
+    public Object[][] dataTablesData(){
+        String excelPath = "./resources/data_sheet.xlsx";//user data is in this excel
+        String sheetName = "user_data";//user data is in this sheet
+        ExcelUtils excelUtils = new ExcelUtils(excelPath,sheetName);
+        Object[][] employeeInfo = excelUtils.getDataArrayWithoutFirstRow();
         return employeeInfo;
     }
 }

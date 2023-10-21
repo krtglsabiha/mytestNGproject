@@ -11,6 +11,7 @@ public class Day16_ExcelTest {
     DataTablesPage dataTablesPage;
     ExcelUtils excelUtils;//to access ExcelUtils objects and methods
     List<Map<String,String>> dataList;//this container will hold the excel data
+
     //    WITH NO EXCEL
     @Test
     public void userCreationTest(){
@@ -57,9 +58,11 @@ public class Day16_ExcelTest {
 //        get data from excel using reusable method
         dataList = excelUtils.getDataList();
 //        System.out.println(dataList);
+
 //        LOOP BEGINS
         for (Map<String ,String> eachData : dataList) {
             System.out.println(eachData);
+
 //        When user go to  https://editor.datatables.net/
             Driver.getDriver().get("https://editor.datatables.net/");
 //        Click on the new button
