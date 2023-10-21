@@ -11,7 +11,9 @@ public class RentalLoginPage {
     }
     @FindBy(id="formBasicEmail")
     public WebElement username;
-    @FindBy(id="formBasicPassword")
+
+    @FindBy(id="formBasicPassword"
+    )
     public WebElement password;
     @FindBy(xpath="//button[@type='submit']")
     public WebElement loginButton;
