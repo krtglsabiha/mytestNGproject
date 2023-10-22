@@ -1,4 +1,5 @@
 package myapp.tests.dataprovider;
+
 import myapp.pages.DataTablesPage;
 import myapp.utilities.DataProviderUtils;
 import myapp.utilities.Driver;
@@ -7,7 +8,6 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class Day17_DataProvider2 {
-
     DataTablesPage dataTablesPage;
     @Test(dataProvider = "dataTablesData",dataProviderClass = DataProviderUtils.class)
     public void userCreatingWithDataProvider(
@@ -28,17 +28,16 @@ public class Day17_DataProvider2 {
 
 //        When user go to  https://editor.datatables.net/
         Driver.getDriver().get("https://editor.datatables.net/");
-
 //        Click on the new button
         WaitUtils.waitFor(2);
         dataTablesPage = new DataTablesPage();
         dataTablesPage.newButton.click();
         WaitUtils.waitFor(2);
-
 //        When user enters all fields
 //        dataTablesPage.firstName.sendKeys(eachData.get("first_name"));
 //        REPLACE eachData.get("first_name") WITH firstName
         dataTablesPage.firstName.sendKeys(firstName);
+
         WaitUtils.waitFor(2);
 //        dataTablesPage.lastName.sendKeys(eachData.get("last_name"));
         dataTablesPage.lastName.sendKeys(lastName);
@@ -69,6 +68,8 @@ public class Day17_DataProvider2 {
 //        Assert.assertTrue(dataTablesPage.nameField.getText().contains(eachData.get("first_name")));
         Assert.assertTrue(dataTablesPage.nameField.getText().contains(firstName));
         WaitUtils.waitFor(2);
+
         Driver.closeDriver();
+
     }
 }
