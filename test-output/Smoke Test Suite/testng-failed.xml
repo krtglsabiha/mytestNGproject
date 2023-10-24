@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="4" parallel="classes" name="Failed suite [Smoke Test Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="4" parallel="classes" name="Smoke Test 1(failed)">
+    <classes>
+      <class name="myapp.tests.topics.Day13_SoftAssertion">
+        <methods>
+          <include name="softAssertion"/>
+          <include name="javaAssert"/>
+          <include name="hardAssert"/>
+        </methods>
+      </class> <!-- myapp.tests.topics.Day13_SoftAssertion -->
+      <class name="myapp.tests.dataprovider.Day17_DataProvider2">
+        <methods>
+          <include name="userCreatingWithDataProvider"/>
+        </methods>
+      </class> <!-- myapp.tests.dataprovider.Day17_DataProvider2 -->
+      <class name="myapp.tests.topics.Day13_DependsOnMethods">
+        <methods>
+          <include name="checkOutTest"/>
+          <include name="searchTest"/>
+        </methods>
+      </class> <!-- myapp.tests.topics.Day13_DependsOnMethods -->
+      <class name="myapp.tests.topics.Day13_DependsOnGroups">
+        <methods>
+          <include name="searchTest"/>
+          <include name="logOutTest"/>
+        </methods>
+      </class> <!-- myapp.tests.topics.Day13_DependsOnGroups -->
+      <class name="myapp.tests.practices.CreateAndDeleteAccount">
+        <methods>
+          <include name="accountCreateDeleteTest"/>
+        </methods>
+      </class> <!-- myapp.tests.practices.CreateAndDeleteAccount -->
+      <class name="myapp.tests.listeners.Day18_ListenersTest">
+        <methods>
+          <include name="test3"/>
+          <include name="test4"/>
+          <include name="test2"/>
+        </methods>
+      </class> <!-- myapp.tests.listeners.Day18_ListenersTest -->
+    </classes>
+  </test> <!-- Smoke Test 1(failed) -->
+</suite> <!-- Failed suite [Smoke Test Suite] -->

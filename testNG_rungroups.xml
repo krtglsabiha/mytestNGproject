@@ -4,7 +4,7 @@
         <!--        groups-->
         <groups>
             <run>
-                <!--                tags : use this tag in the test cases that you want to execute using groups = "minor_regression_group"-->
+                <!--tags : use this tag in the test cases that you want to execute using groups = "minor_regression_group"-->
                 <include name="minor_regression_group" />
             </run>
         </groups>

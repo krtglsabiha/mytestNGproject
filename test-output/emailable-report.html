@@ -1,0 +1,460 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "https://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
+<head>
+<meta charset='utf-8'>
+<title>TestNG Report</title>
+<style type="text/css">
+table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}
+td,th {border:1px solid #009;padding:.25em .5em}
+.result th {vertical-align:bottom}
+.param th {padding-left:1em;padding-right:1em}
+.param td {padding-left:.5em;padding-right:2em}
+.stripe td,.stripe th {background-color: #E6EBF9}
+.numi,.numi_attn {text-align:right}
+.total td {font-weight:bold}
+.passedodd td {background-color: #0A0}
+.passedeven td {background-color: #3F3}
+.skippedodd td {background-color: #CCC}
+.skippedodd td {background-color: #DDD}
+.failedodd td,.numi_attn {background-color: #F33}
+.failedeven td,.stripe .numi_attn {background-color: #D00}
+.stacktrace {white-space:pre;font-family:monospace}
+.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}
+</style>
+</head>
+<body>
+<table cellspacing="0" cellpadding="0" class="testOverview">
+<tr><th>Test</th><th>Methods<br/>Passed</th><th>Scenarios<br/>Passed</th><th># skipped</th><th># failed</th><th>Total<br/>Time</th><th>Included<br/>Groups</th><th>Excluded<br/>Groups</th></tr>
+<tr><td style="text-align:left;padding-right:2em"><a href="#t1">Smoke Test 1</a></td><td class="numi">37</td><td class="numi">37</td><td class="numi_attn">3</td><td class="numi_attn">9</td><td class="numi">326,9 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+</table>
+<table cellspacing="0" cellpadding="0" class="methodOverview" id="summary">
+<tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Start</th><th>Time<br/>(ms)</th></tr>
+<tr id="t1"><th colspan="5">Smoke Test 1 &#8212; failed</th></tr>
+<tr class="failedodd"><td rowspan="2">myapp.tests.topics.Day13_SoftAssertion</td><td><a href="#m1"><b>hardAssert</b>  </a></td><td class="numi">1</td><td>1698103446873</td><td class="numi">20</td></tr><tr class="failedodd"><td><a href="#m2"><b>javaAssert</b>  </a></td><td class="numi">1</td><td>1698103446913</td><td class="numi">7</td></tr>
+<tr class="failedeven"><td>myapp.tests.listeners.Day18_ListenersTest</td><td><a href="#m3"><b>test2</b>  </a></td><td class="numi">1</td><td>1698103459683</td><td class="numi">12</td></tr>
+<tr class="failedodd"><td>myapp.tests.topics.Day13_DependsOnGroups</td><td><a href="#m4"><b>searchTest</b> (smoke-test) </a></td><td class="numi">1</td><td>1698103392106</td><td class="numi">166</td></tr>
+<tr class="failedeven"><td>myapp.tests.topics.Day13_SoftAssertion</td><td><a href="#m5"><b>softAssertion</b>  </a></td><td class="numi">1</td><td>1698103447067</td><td class="numi">98</td></tr>
+<tr class="failedodd"><td>myapp.tests.listeners.Day18_ListenersTest</td><td><a href="#m6"><b>test4</b>  </a></td><td class="numi">1</td><td>1698103459713</td><td class="numi">59232</td></tr>
+<tr class="failedeven"><td>myapp.tests.practices.CreateAndDeleteAccount</td><td><a href="#m7"><b>accountCreateDeleteTest</b>  </a></td><td class="numi">1</td><td>1698103392043</td><td class="numi">54766</td></tr>
+<tr class="failedodd"><td>myapp.tests.topics.Day13_DependsOnMethods</td><td><a href="#m8"><b>searchTest</b>  </a></td><td class="numi">1</td><td>1698103447205</td><td class="numi">10</td></tr>
+<tr class="failedeven"><td>myapp.tests.dataprovider.Day17_DataProvider2</td><td><a href="#m9"><b>userCreatingWithDataProvider</b>  </a></td><td class="numi">1</td><td>1698103501311</td><td class="numi">0</td></tr>
+<tr><th colspan="5">Smoke Test 1 &#8212; skipped</th></tr>
+<tr class="skippedodd"><td>myapp.tests.topics.Day13_DependsOnMethods</td><td><a href="#m10"><b>checkOutTest</b>  </a></td><td class="numi">1</td><td>1698103447287</td><td class="numi">0</td></tr>
+<tr class="skippedeven"><td>myapp.tests.listeners.Day18_ListenersTest</td><td><a href="#m11"><b>test3</b>  </a></td><td class="numi">1</td><td>1698103459698</td><td class="numi">1</td></tr>
+<tr class="skippedodd"><td>myapp.tests.topics.Day13_DependsOnGroups</td><td><a href="#m12"><b>logOutTest</b>  </a></td><td class="numi">1</td><td>1698103447299</td><td class="numi">0</td></tr>
+<tr><th colspan="5">Smoke Test 1 &#8212; passed</th></tr>
+<tr class="passedodd"><td>myapp.tests.topics.Day13_DependsOnGroups</td><td><a href="#m13"><b>homePageTest</b> (smoke-test) </a></td><td class="numi">1</td><td>1698103392098</td><td class="numi">3</td></tr>
+<tr class="passedeven"><td>myapp.tests.topics.Day14_DriverTest</td><td><a href="#m14"><b>driverTest</b>  </a></td><td class="numi">1</td><td>1698103426216</td><td class="numi">33460</td></tr>
+<tr class="passedodd"><td>myapp.tests.dataprovider.Day16_DataProvider1</td><td><a href="#m15"><b>test1</b>  </a></td><td class="numi">5</td><td>1698103450533</td><td class="numi">114</td></tr>
+<tr class="passedeven"><td>myapp.tests.topics.Day13_Annotations</td><td><a href="#m16"><b>test5</b>  </a></td><td class="numi">1</td><td>1698103518973</td><td class="numi">12</td></tr>
+<tr class="passedodd"><td>myapp.tests.practices.BrokenImages</td><td><a href="#m17"><b>brokenImages</b>  </a></td><td class="numi">1</td><td>1698103392042</td><td class="numi">34167</td></tr>
+<tr class="passedeven"><td>myapp.tests.topics.Day13_DependsOnMethods</td><td><a href="#m18"><b>homePageTest</b>  </a></td><td class="numi">1</td><td>1698103447175</td><td class="numi">3</td></tr>
+<tr class="passedodd"><td rowspan="2">myapp.tests.dataprovider.Day16_DataProvider1</td><td><a href="#m19"><b>test1</b>  </a></td><td class="numi">5</td><td>1698103450533</td><td class="numi">114</td></tr><tr class="passedodd"><td><a href="#m20"><b>employeeCredentialsTest</b>  </a></td><td class="numi">4</td><td>1698103436707</td><td class="numi">20</td></tr>
+<tr class="passedeven"><td>myapp.tests.excelautomation.Day16_ExcelTest</td><td><a href="#m21"><b>userCreationWithExcel</b>  </a></td><td class="numi">1</td><td>1698103570880</td><td class="numi">147837</td></tr>
+<tr class="passedodd"><td rowspan="2">myapp.tests.dataprovider.Day16_DataProvider1</td><td><a href="#m22"><b>test1</b>  </a></td><td class="numi">5</td><td>1698103450533</td><td class="numi">114</td></tr><tr class="passedodd"><td><a href="#m23"><b>employeeCredentialsTest</b>  </a></td><td class="numi">4</td><td>1698103436707</td><td class="numi">20</td></tr>
+<tr class="passedeven"><td>myapp.tests.excelautomation.Day16_ExcelTest</td><td><a href="#m24"><b>userCreationTest</b>  </a></td><td class="numi">1</td><td>1698103501320</td><td class="numi">69555</td></tr>
+<tr class="passedodd"><td>myapp.tests.topics.Day13_DependsOnGroups</td><td><a href="#m25"><b>checkOutTest</b> (regression-test) </a></td><td class="numi">1</td><td>1698103392049</td><td class="numi">23</td></tr>
+<tr class="passedeven"><td rowspan="2">myapp.tests.dataprovider.Day16_DataProvider1</td><td><a href="#m26"><b>test2</b> (minor_regression_group) </a></td><td class="numi">3</td><td>1698103450662</td><td class="numi">74</td></tr><tr class="passedeven"><td><a href="#m27"><b>employeeCredentialsTest</b>  </a></td><td class="numi">4</td><td>1698103436707</td><td class="numi">20</td></tr>
+<tr class="passedodd"><td>myapp.tests.listeners.Day18_ListenersTest</td><td><a href="#m28"><b>test1</b>  </a></td><td class="numi">1</td><td>1698103459679</td><td class="numi">2</td></tr>
+<tr class="passedeven"><td>myapp.tests.practices.XYZBankTest</td><td><a href="#m29"><b>xyzBankTest</b>  </a></td><td class="numi">1</td><td>1698103502258</td><td class="numi">107739</td></tr>
+<tr class="passedodd"><td>myapp.tests.practices.MedunnaPatient</td><td><a href="#m30"><b>medunnaPatient</b>  </a></td><td class="numi">5</td><td>1698103453127</td><td class="numi">190207</td></tr>
+<tr class="passedeven"><td>myapp.tests.dataprovider.Day16_DataProvider1</td><td><a href="#m31"><b>excelEmployeeDataTest</b>  </a></td><td class="numi">4</td><td>1698103450424</td><td class="numi">101</td></tr>
+<tr class="passedodd"><td>myapp.tests.topics.Day13_Annotations</td><td><a href="#m32"><b>test1</b> (minor_regression_group) </a></td><td class="numi">1</td><td>1698103519001</td><td class="numi">1</td></tr>
+<tr class="passedeven"><td rowspan="2">myapp.tests.practices.MedunnaPatient</td><td><a href="#m33"><b>medunnaPatient</b>  </a></td><td class="numi">5</td><td>1698103453127</td><td class="numi">190207</td></tr><tr class="passedeven"><td><a href="#m34"><b>medunnaPatient</b>  </a></td><td class="numi">5</td><td>1698103453127</td><td class="numi">190207</td></tr>
+<tr class="passedodd"><td>myapp.tests.dataprovider.Day16_DataProvider1</td><td><a href="#m35"><b>excelEmployeeDataTest</b>  </a></td><td class="numi">4</td><td>1698103450424</td><td class="numi">101</td></tr>
+<tr class="passedeven"><td>myapp.tests.smoketest.Day15_US100201_Admin_Login</td><td><a href="#m36"><b>US100201_Admin_Login</b> (minor_regression_group) </a></td><td class="numi">1</td><td>1698103392058</td><td class="numi">69165</td></tr>
+<tr class="passedodd"><td>myapp.tests.dataprovider.Day16_DataProvider1</td><td><a href="#m37"><b>test2</b> (minor_regression_group) </a></td><td class="numi">3</td><td>1698103450662</td><td class="numi">74</td></tr>
+<tr class="passedeven"><td>myapp.tests.practices.MedunnaPatient</td><td><a href="#m38"><b>medunnaPatient</b>  </a></td><td class="numi">5</td><td>1698103453127</td><td class="numi">190207</td></tr>
+<tr class="passedodd"><td>myapp.tests.topics.Day13_Annotations</td><td><a href="#m39"><b>test4</b> (minor_regression_group) </a></td><td class="numi">1</td><td>1698103519013</td><td class="numi">0</td></tr>
+<tr class="passedeven"><td rowspan="2">myapp.tests.dataprovider.Day16_DataProvider1</td><td><a href="#m40"><b>test2</b> (minor_regression_group) </a></td><td class="numi">3</td><td>1698103450662</td><td class="numi">74</td></tr><tr class="passedeven"><td><a href="#m41"><b>excelEmployeeDataTest</b>  </a></td><td class="numi">4</td><td>1698103450424</td><td class="numi">101</td></tr>
+<tr class="passedodd"><td>myapp.tests.topics.Day14_ConfigReaderTest</td><td><a href="#m42"><b>configReaderTest</b>  </a></td><td class="numi">1</td><td>1698103392291</td><td class="numi">44346</td></tr>
+<tr class="passedeven"><td>myapp.tests.dataprovider.Day16_DataProvider1</td><td><a href="#m43"><b>excelEmployeeDataTest</b>  </a></td><td class="numi">4</td><td>1698103450424</td><td class="numi">101</td></tr>
+<tr class="passedodd"><td>myapp.tests.practices.MedunnaPatient</td><td><a href="#m44"><b>medunnaPatient</b>  </a></td><td class="numi">5</td><td>1698103453127</td><td class="numi">190207</td></tr>
+<tr class="passedeven"><td rowspan="3">myapp.tests.dataprovider.Day16_DataProvider1</td><td><a href="#m45"><b>employeeCredentialsTest</b>  </a></td><td class="numi">4</td><td>1698103436707</td><td class="numi">20</td></tr><tr class="passedeven"><td><a href="#m46"><b>test1</b>  </a></td><td class="numi">5</td><td>1698103450533</td><td class="numi">114</td></tr><tr class="passedeven"><td><a href="#m47"><b>test1</b>  </a></td><td class="numi">5</td><td>1698103450533</td><td class="numi">114</td></tr>
+<tr class="passedodd"><td>myapp.tests.topics.Day15_OrangeHRMLogin</td><td><a href="#m48"><b>loginTest</b>  </a></td><td class="numi">1</td><td>1698103447303</td><td class="numi">54001</td></tr>
+<tr class="passedeven"><td>myapp.tests.smoketest.Day15_US100201_Admin_Login</td><td><a href="#m49"><b>withReusableMethods</b>  </a></td><td class="numi">1</td><td>1698103461282</td><td class="numi">40971</td></tr>
+</table>
+<h1>Smoke Test 1</h1>
+<h2 id="m1">myapp.tests.topics.Day13_DependsOnMethods:searchTest</h2>
+<div>
+<div class="stacktrace">java.lang.AssertionError: expected [true] but found [false]
+	at myapp.tests.topics.Day13_DependsOnMethods.searchTest(Day13_DependsOnMethods.java:12)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 14 stack frames</div>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m2">myapp.tests.dataprovider.Day17_DataProvider2:userCreatingWithDataProvider</h2>
+<div>
+<div class="stacktrace">org.testng.TestNGException: 
+Method public void myapp.tests.dataprovider.Day17_DataProvider2.userCreatingWithDataProvider(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) requires a @DataProvider named : dataTablesData in class myapp.utilities.DataProviderUtils
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 9 stack frames</div>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m3">myapp.tests.topics.Day13_SoftAssertion:hardAssert</h2>
+<div>
+<div class="stacktrace">java.lang.AssertionError: expected [true] but found [false]
+	at myapp.tests.topics.Day13_SoftAssertion.hardAssert(Day13_SoftAssertion.java:17)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 14 stack frames</div>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m4">myapp.tests.topics.Day13_SoftAssertion:javaAssert</h2>
+<div>
+<div class="stacktrace">java.lang.AssertionError
+	at myapp.tests.topics.Day13_SoftAssertion.javaAssert(Day13_SoftAssertion.java:36)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 10 stack frames</div>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m5">myapp.tests.listeners.Day18_ListenersTest:test2</h2>
+<div>
+<div class="stacktrace">java.lang.AssertionError: expected [true] but found [false]
+	at myapp.tests.listeners.Day18_ListenersTest.test2(Day18_ListenersTest.java:27)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 14 stack frames</div>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m6">myapp.tests.topics.Day13_DependsOnGroups:searchTest</h2>
+<div>
+<div class="stacktrace">java.lang.AssertionError: expected [true] but found [false]
+	at myapp.tests.topics.Day13_DependsOnGroups.searchTest(Day13_DependsOnGroups.java:13)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 14 stack frames</div>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m7">myapp.tests.practices.CreateAndDeleteAccount:accountCreateDeleteTest</h2>
+<div>
+<div class="stacktrace">org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 18.672
+  (Session info: chrome=118.0.5993.89)
+Build info: version: &apos;4.14.1&apos;, revision: &apos;03f8ede370&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;18.0.2.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c27d9556e700c6700263d879a404f061, get {url=http://automationexercise.com}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 118.0.5993.89, chrome: {chromedriverVersion: 118.0.5993.70 (e52f33f30b91..., userDataDir: C:\Users\icuvo\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54598}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54598/devtoo..., se:cdpVersion: 118.0.5993.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: c27d9556e700c6700263d879a404f061
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:304)
+	at org.openqa.selenium.support.ThreadGuard$WebDriverInvocationHandler.invokeUnderlying(ThreadGuard.java:99)
+	at org.openqa.selenium.support.ThreadGuard$WebDriverInvocationHandler.invoke(ThreadGuard.java:91)
+	at jdk.proxy2/jdk.proxy2.$Proxy19.get(Unknown Source)
+	at myapp.tests.practices.CreateAndDeleteAccount.accountCreateDeleteTest(CreateAndDeleteAccount.java:35)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 15 stack frames</div>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m8">myapp.tests.topics.Day13_SoftAssertion:softAssertion</h2>
+<div>
+<div class="stacktrace">java.lang.AssertionError: Test Case Completed...
+	expected [true] but found [false],
+	expected [orange] but found [apple]
+	at myapp.tests.topics.Day13_SoftAssertion.softAssertion(Day13_SoftAssertion.java:57)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 11 stack frames</div>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m9">myapp.tests.listeners.Day18_ListenersTest:test4</h2>
+<div>
+<div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#wrong\-id&quot;}
+  (Session info: chrome=118.0.5993.89)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.14.1&apos;, revision: &apos;03f8ede370&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;18.0.2.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ebd8e5d1f530850a35546b576e5a85b1, findElement {using=id, value=wrong-id}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 118.0.5993.89, chrome: {chromedriverVersion: 118.0.5993.70 (e52f33f30b91..., userDataDir: C:\Users\icuvo\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54802}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54802/devtoo..., se:cdpVersion: 118.0.5993.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ebd8e5d1f530850a35546b576e5a85b1
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+	at org.openqa.selenium.support.ThreadGuard$WebDriverInvocationHandler.invokeUnderlying(ThreadGuard.java:99)
+	at org.openqa.selenium.support.ThreadGuard$WebDriverInvocationHandler.invoke(ThreadGuard.java:91)
+	at jdk.proxy2/jdk.proxy2.$Proxy19.findElement(Unknown Source)
+	at myapp.tests.listeners.Day18_ListenersTest.test4(Day18_ListenersTest.java:40)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 15 stack frames</div>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m10">myapp.tests.listeners.Day18_ListenersTest:test3</h2>
+<div>
+<div class="stacktrace">org.testng.SkipException: Skipping test case on purpose
+	at myapp.tests.listeners.Day18_ListenersTest.test3(Day18_ListenersTest.java:33)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 10 stack frames</div>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m11">myapp.tests.topics.Day13_DependsOnMethods:checkOutTest</h2>
+<div>
+<div class="stacktrace">java.lang.Throwable: Method myapp.tests.topics.Day13_DependsOnMethods.checkOutTest() on instance myapp.tests.topics.Day13_DependsOnMethods@795cd85e depends on not successfully finished methods 
+[myapp.tests.topics.Day13_DependsOnMethods.searchTest() on instance myapp.tests.topics.Day13_DependsOnMethods@795cd85e]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 3 stack frames</div>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m12">myapp.tests.topics.Day13_DependsOnGroups:logOutTest</h2>
+<div>
+<div class="stacktrace">java.lang.Throwable: Method Day13_DependsOnGroups.logOutTest()[pri:0, instance:myapp.tests.topics.Day13_DependsOnGroups@479d31f3] depends on not successfully finished methods in group &quot;smoke-test&quot;
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 3 stack frames</div>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m13">myapp.tests.dataprovider.Day16_DataProvider1:employeeCredentialsTest</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr>
+<tr class="param stripe"><td>sam.walker@bluerentalcars.com</td>
+<td>c!fas_art</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m14">myapp.tests.listeners.Day18_ListenersTest:test1</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m15">myapp.tests.topics.Day13_DependsOnGroups:homePageTest</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m16">myapp.tests.practices.XYZBankTest:xyzBankTest</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m17">myapp.tests.practices.MedunnaPatient:medunnaPatient</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th></tr>
+<tr class="param stripe"><td>john_doe103</td>
+<td>John.123</td>
+<td>John</td>
+<td>Doe</td>
+<td>johndoe103@gmail.com</td>
+<td>1.23456789E9</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m18">myapp.tests.dataprovider.Day16_DataProvider1:excelEmployeeDataTest</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr>
+<tr class="param stripe"><td>sam.walker@bluerentalcars.com</td>
+<td>c!fas_art</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m19">myapp.tests.topics.Day14_DriverTest:driverTest</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m20">myapp.tests.dataprovider.Day16_DataProvider1:test1</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>volvo</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m21">myapp.tests.topics.Day13_Annotations:test5</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m22">myapp.tests.practices.BrokenImages:brokenImages</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m23">myapp.tests.topics.Day13_Annotations:test1</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m24">myapp.tests.practices.MedunnaPatient:medunnaPatient</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th></tr>
+<tr class="param stripe"><td>john_doe101</td>
+<td>John.123</td>
+<td>John</td>
+<td>Doe</td>
+<td>johndoe101@gmail.com</td>
+<td>1.23456789E9</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m25">myapp.tests.practices.MedunnaPatient:medunnaPatient</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th></tr>
+<tr class="param stripe"><td>john_doe102</td>
+<td>John.123</td>
+<td>John</td>
+<td>Doe</td>
+<td>johndoe102@gmail.com</td>
+<td>1.23456789E9</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m26">myapp.tests.topics.Day13_DependsOnMethods:homePageTest</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m27">myapp.tests.dataprovider.Day16_DataProvider1:excelEmployeeDataTest</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr>
+<tr class="param stripe"><td>kate.brown@bluerentalcars.com</td>
+<td>tad1$Fas</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m28">myapp.tests.dataprovider.Day16_DataProvider1:test1</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>toyota</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m29">myapp.tests.smoketest.Day15_US100201_Admin_Login:US100201_Admin_Login</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m30">myapp.tests.dataprovider.Day16_DataProvider1:employeeCredentialsTest</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr>
+<tr class="param stripe"><td>kate.brown@bluerentalcars.com</td>
+<td>tad1$Fas</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m31">myapp.tests.dataprovider.Day16_DataProvider1:test2</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th></tr>
+<tr class="param stripe"><td>admin3</td>
+<td>pass3</td>
+<td>CFO</td>
+<td>65</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m32">myapp.tests.practices.MedunnaPatient:medunnaPatient</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th></tr>
+<tr class="param stripe"><td>john_doe100</td>
+<td>John.123</td>
+<td>John</td>
+<td>Doe</td>
+<td>johndoe100@gmail.com</td>
+<td>1.23456789E9</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m33">myapp.tests.topics.Day13_Annotations:test4</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m34">myapp.tests.dataprovider.Day16_DataProvider1:test2</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th></tr>
+<tr class="param stripe"><td>admin2</td>
+<td>pass2</td>
+<td>COO</td>
+<td>56</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m35">myapp.tests.excelautomation.Day16_ExcelTest:userCreationWithExcel</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m36">myapp.tests.dataprovider.Day16_DataProvider1:excelEmployeeDataTest</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr>
+<tr class="param stripe"><td>pam.raymond@bluerentalcars.com</td>
+<td>Nga^g6!</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m37">myapp.tests.topics.Day14_ConfigReaderTest:configReaderTest</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m38">myapp.tests.dataprovider.Day16_DataProvider1:test1</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>bmw</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m39">myapp.tests.dataprovider.Day16_DataProvider1:excelEmployeeDataTest</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr>
+<tr class="param stripe"><td>raj.khan@bluerentalcars.com</td>
+<td>v7Hg_va^</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m40">myapp.tests.practices.MedunnaPatient:medunnaPatient</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th></tr>
+<tr class="param stripe"><td>john_doe104</td>
+<td>John.123</td>
+<td>John</td>
+<td>Doe</td>
+<td>johndoe104@gmail.com</td>
+<td>1.23456789E9</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m41">myapp.tests.dataprovider.Day16_DataProvider1:employeeCredentialsTest</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr>
+<tr class="param stripe"><td>pam.raymond@bluerentalcars.com</td>
+<td>Nga^g6!</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m42">myapp.tests.dataprovider.Day16_DataProvider1:test1</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>tesla</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m43">myapp.tests.dataprovider.Day16_DataProvider1:employeeCredentialsTest</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr>
+<tr class="param stripe"><td>raj.khan@bluerentalcars.com</td>
+<td>v7Hg_va^</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m44">myapp.tests.dataprovider.Day16_DataProvider1:test1</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>honda</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m45">myapp.tests.excelautomation.Day16_ExcelTest:userCreationTest</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m46">myapp.tests.topics.Day13_DependsOnGroups:checkOutTest</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m47">myapp.tests.dataprovider.Day16_DataProvider1:test2</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th></tr>
+<tr class="param stripe"><td>admin1</td>
+<td>pass1</td>
+<td>CEO</td>
+<td>60</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m48">myapp.tests.topics.Day15_OrangeHRMLogin:loginTest</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m49">myapp.tests.smoketest.Day15_US100201_Admin_Login:withReusableMethods</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+</body></html>
