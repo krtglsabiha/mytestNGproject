@@ -4,6 +4,7 @@ import myapp.pages.AutomationExerciseHomePage;
 import myapp.pages.AutomationExerciseLoginPage;
 import myapp.pages.AutomationExerciseSignUpPage;
 import myapp.utilities.Driver;
+
 import myapp.utilities.ExtentReportUtils;
 import myapp.utilities.LoggerUtils;
 import myapp.utilities.MediaUtils;
